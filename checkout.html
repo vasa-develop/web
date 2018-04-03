@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>checkout</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<script type="text/javascript">
+	
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var decodedCookie = decodeURIComponent(document.cookie);
+	    var ca = decodedCookie.split(';');
+	    for(var i = 0; i <ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') {
+	            c = c.substring(1);
+	        }
+	        if (c.indexOf(name) == 0) {
+	            return c.substring(name.length, c.length);
+	        }
+	    }
+	    return "";
+	}
+</script>
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header_one">
+		<div class="w3l_offers">
+			<a href="index.html">logo</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="View your cart" class="button" />
+                </fieldset>
+            </form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li> 
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Contact Us</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+		<div class="logo_products">
+		<div class="container">
+			
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="#">Home</a><i>|</i></li>
+					<li><a href="#">About Us</a><i>|</i></li>
+					<li><a href="#">Today's Deals</a><i>|</i></li>
+					<li><a href="#">Our Services</a><i>|</i></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1" style="float:right;">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>000000</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">help@help.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div> 
+<!-- //header -->
+
+<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			 <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+			   <!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="#">Product1</a></li>
+						<li><a href="#">Product2</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Product3<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="#">Product31</a></li>
+										<li><a href="#">Product32</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li><a href="#">Product4</a></li>
+						<li><a href="#">Product5</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Product6<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="#">Product7</a></li>
+										<li><a href="#">Product8</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+						<li><a href="#">Product9</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Product10<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="#">Product11</a></li>
+										<li><a href="#">Product12</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+						<li><a href="#">Product13</a></li>
+					</ul>
+				 </div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+<!-- about -->
+		<div class="privacy about">
+			<h3>Chec<span>kout</span></h3>
+			
+	      <div class="checkout-right">
+					<h4>Your shopping cart contains: <span>3 Products</span></h4>
+				<table class="timetable_sub">
+					<thead>
+						<tr>
+							<th>SL No.</th>	
+							<th>Product</th>
+							<th>Quality</th>
+							<th>Product Name</th>
+						
+							<th>Price</th>
+							<th>Remove</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="rem1" id="cart1" style="display: none;">
+						<td class="invert">1</td>
+						<td class="invert-image"><a href="single.html"><img src="images/1.png" alt=" " class="img-responsive"></a></td>
+						<td class="invert">
+							 <div class="quantity">
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span id="count1">1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td class="invert">Product 1</td>
+						
+						<td class="invert" id="price1">290.00</td>
+						<td class="invert">
+							<div class="rem">
+								<div class="close1"> </div>
+							</div>
+
+						</td>
+					</tr>
+
+					<tr class="rem2" id="cart2" style="display: none;">
+						<td class="invert">2</td>
+						<td class="invert-image"><a href="single.html"><img src="images/3.png" alt=" " class="img-responsive"></a></td>
+						<td class="invert">
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span id="count2">1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td class="invert">Product 2</td>
+					
+						<td class="invert" id="price2">250.00</td>
+						<td class="invert">
+							<div class="rem">
+								<div class="close2"> </div>
+							</div>
+
+						</td>
+					</tr>
+
+					<tr class="rem3" id="cart3" style="display: none;">
+						<td class="invert">3</td>
+						<td class="invert-image"><a href="single.html"><img src="images/2.png" alt=" " class="img-responsive"></a></td>
+						<td class="invert">
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span id="count3">1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td class="invert">Product 3</td>
+						
+						<td class="invert" id="price3">15.00</td>
+						<td class="invert">
+							<div class="rem">
+								<div class="close3"> </div>
+							</div>
+	
+						</td>
+					</tr>
+
+					<tr class="rem4" id="cart4" style="display: none;">
+						<td class="invert">4</td>
+						<td class="invert-image"><a href="4.html"><img src="images/2.png" alt=" " class="img-responsive"></a></td>
+						<td class="invert">
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span id="count4">1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td class="invert">Product 4</td>
+						
+						<td class="invert" id="price4">15.00</td>
+						<td class="invert">
+							<div class="rem">
+								<div class="close3"> </div>
+							</div>
+	
+						</td>
+					</tr>
+
+				</tbody></table>
+			</div>
+			<div class="checkout-left">	
+				<div class="col-md-6 checkout-left-basket">
+					<h4>Continue to basket</h4>
+					<table cellspacing="100">
+						<tr>
+							<td id="product"></td>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+							<td id="product_price"></td>
+						</tr>
+						<tr>
+							<td>TOTAL</td>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+							<td id="product_total_price"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-6 address_form_agile">
+					
+				
+									<div class="checkout-right-basket">
+				        	<a href="qr.html">Make a Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+			      	</div>
+					</div>
+			
+				<div class="clearfix"> </div>
+				
+			</div>
+
+		</div>
+<!-- //about -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>Address</h3>
+				<ul class="add">
+					<li style="color:#bbb;">s9,kalusarai,front of azad apartment,near iit delhi,hauz khas,new delhi</li>
+					<li style="color:#bbb;">Email id: <a href="mailto:hamza@towardsblockchain.com">askljdsakl@skald.com</a></li>
+					<li style="color:#bbb;">Phone Number: 0000000000</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3 w3_footer_grid">
+				<h3>Check more</h3>
+				<ul class="add">
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Best Deals</a></li>
+					<li><a href="#">Services</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>policies</h3>
+				<ul class="add">
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">terms of use</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>follow us</h3>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							
+						</ul>
+			</div>
+			<div class="clearfix"> </div>
+			
+		</div>
+	</div>
+<!-- //footer -->
+<!-- js -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+							 <!--quantity-->
+									<script>
+									$('.value-plus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+										divUpd.text(newVal);
+									});
+
+									$('.value-minus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+										if(newVal>=1) divUpd.text(newVal);
+									});
+									</script>
+								<!--quantity-->
+							<script>$(document).ready(function(c) {
+								$('.close1').on('click', function(c){
+									$('.rem1').fadeOut('slow', function(c){
+										$('.rem1').remove();
+									});
+									});	  
+								});
+						   </script>
+							<script>$(document).ready(function(c) {
+								$('.close2').on('click', function(c){
+									$('.rem2').fadeOut('slow', function(c){
+										$('.rem2').remove();
+									});
+									});	  
+								});
+						   </script>
+						  	<script>$(document).ready(function(c) {
+								$('.close3').on('click', function(c){
+									$('.rem3').fadeOut('slow', function(c){
+										$('.rem3').remove();
+									});
+									});	  
+								});
+						   </script>
+
+<!-- //js -->
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".header_one").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".header_one").addClass("fixed");
+			}else{
+				$(".header_one").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+	<script type="text/javascript">
+		document.getElementById(getCookie("cart")).style.display = "table-row";
+		switch(getCookie("cart")){
+			case "cart1": {
+				document.getElementById("price1").innerHTML = getCookie("price");
+				document.getElementById("count1").innerHTML = getCookie("count");
+				document.getElementById("product").innerHTML = "Product1";
+				document.getElementById("product_price").innerHTML = getCookie("price");
+				document.getElementById("product_total_price").innerHTML = getCookie("price");
+			}
+			case "cart2": {
+				document.getElementById("price2").innerHTML = getCookie("price");
+				document.getElementById("count2").innerHTML = getCookie("count");
+				document.getElementById("product").innerHTML = "Product2";
+				document.getElementById("product_price").innerHTML = getCookie("price");
+				document.getElementById("product_total_price").innerHTML = getCookie("price");
+			}
+			case "cart3": {
+				document.getElementById("price3").innerHTML = getCookie("price");
+				document.getElementById("count3").innerHTML = getCookie("count");
+				document.getElementById("product").innerHTML = "Product3";
+				document.getElementById("product_price").innerHTML = getCookie("price");
+				document.getElementById("product_total_price").innerHTML = getCookie("price");	
+			}
+			case "cart4": {
+				document.getElementById("price4").innerHTML = getCookie("price");
+				document.getElementById("count4").innerHTML = getCookie("count");
+				document.getElementById("product").innerHTML = "Product4";
+				document.getElementById("product_price").innerHTML = getCookie("price");
+				document.getElementById("product_total_price").innerHTML = getCookie("price");	
+			}
+		}
+	</script>
+</body>
+</html>
