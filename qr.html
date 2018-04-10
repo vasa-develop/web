@@ -13,7 +13,6 @@
 <!-- //font-awesome icons -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="./js/client.js"></script>
 <script type="text/javascript" src="./js/qrcode.js"></script>
 
 </head>
@@ -50,7 +49,7 @@
 		    return;
 		  }
 		  // open connection
-		  var connection = new WebSocket('ws://54.205.136.66:4000');
+		  var connection = new WebSocket('ws://54.91.189.21:4000');
 		  connection.onopen = function () {
 		    // first we want users to enter their names
 		    connection.send(
@@ -85,7 +84,7 @@
 		    if (json.type === 'approval') { 
 		      var approval_msg = json.data;
 		      console.log(approval_msg);
-		      window.location = "http://54.205.136.66/ecommerce/thankyou.html";
+		      window.location = "http://54.91.189.21/ecommerce/thankyou.html";
 		      
 		      //window.alert("logged in!!");
 		      // from now user can start sending messages
